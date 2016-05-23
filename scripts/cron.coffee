@@ -8,5 +8,5 @@ module.exports = (robot) ->
   # *(sec) *(min) *(hour) *(day) *(month) *(day of the week)
   new cronJob('0 * * * * *', () ->
     currentTime = new Date
-    send '#your-channel-name', "current time is #{new Date().toLocaleTimeString()}:00."
+    send '#hagi-bottest', "current time is #{new Date().toLocaleTimeString()}:00."
   ).start()
